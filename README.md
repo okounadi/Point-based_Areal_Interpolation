@@ -8,9 +8,6 @@ _Point-based Areal Interpolation_ uses zero-dimensional (0-D) points as ancillar
 
 When _ancillary information (control points)_ are available at a point resolution (0-D) they pose a significant advantage. Original data can be disaggregated into zonal systems of finer resolutions. Given the fact that there is _spatial heterogeneity_ in various geo-domains at a &quot;micro&quot; level (e.g., crime and health phenomena), trends can be examined at larger scales (i.e. &quot;micro places&quot;).
 
-The figure below illustrates the _density weighted point-based areal interpolation_ (PAI\_density).
-
-
 ## To apply the codes you need the following datasets:
 
 1. _Source zones_: a polygon shapefile of the original set of polygons containing the variable whose values are to be disaggregated.
