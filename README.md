@@ -12,6 +12,7 @@ The figure below illustrates the _density weighted point-based areal interpolati
 
 ![](RackMultipart20201009-4-16a9264_html_395edf408261f0fc.gif)
 
+
 ## To apply the codes you need the following datasets:
 
 1. _Source zones_: a polygon shapefile of the original set of polygons containing the variable whose values are to be disaggregated.
@@ -20,11 +21,13 @@ The figure below illustrates the _density weighted point-based areal interpolati
 
 1. _Target zones_: a polygon shapefile of the new set of polygons (smaller units than source zones). These polygons will get the disaggregated variable values.
 
+
 ## A brief description of the codes
 
 1. _PAI\_density_ [_density weighted point-based areal interpolation_]: At first, each target zone is assigned to one source zone using a point-in-polygon operation, where the point is the centre of the target zone and the polygon is the source zone that contains that point. The variable value for each target zone is a function of the ratio of the variable value and the sum of weights of the source zone, and the weight of the target zone within the source zone. The weight is calculated using a density function that assigns weights proportionally to the control points&#39; density in each target zone.
 
 1. _PAI\_distance_[_distance weighted point-based areal interpolation_]: The process is similar to the one described above but the weights are calculated using a distance instead of a density function [_distance from target zone to the closest control point_ Vs _number of control points within target zone_].
+
 
 ## Further information
 
@@ -33,6 +36,7 @@ The figure below illustrates the _density weighted point-based areal interpolati
 - Data should be in a shapefile format: [https://desktop.arcgis.com/en/arcmap/10.3/manage-data/shapefiles/what-is-a-shapefile.htm](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/shapefiles/what-is-a-shapefile.htm)
 
 - Data should additionally be copied into a personal database (.mdb): [https://desktop.arcgis.com/en/arcmap/latest/manage-data/administer-file-gdbs/create-personal-geodatabase.htm](https://desktop.arcgis.com/en/arcmap/latest/manage-data/administer-file-gdbs/create-personal-geodatabase.htm)
+
 
 ## References
 
