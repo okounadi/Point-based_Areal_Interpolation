@@ -10,8 +10,6 @@ When _ancillary information (control points)_ are available at a point resolutio
 
 The figure below illustrates the _density weighted point-based areal interpolation_ (PAI\_density).
 
-![](RackMultipart20201009-4-16a9264_html_395edf408261f0fc.gif)
-
 
 ## To apply the codes you need the following datasets:
 
@@ -26,7 +24,7 @@ The figure below illustrates the _density weighted point-based areal interpolati
 
 1. _PAI\_density_ [_density weighted point-based areal interpolation_]: At first, each target zone is assigned to one source zone using a point-in-polygon operation, where the point is the centre of the target zone and the polygon is the source zone that contains that point. The variable value for each target zone is a function of the ratio of the variable value and the sum of weights of the source zone, and the weight of the target zone within the source zone. The weight is calculated using a density function that assigns weights proportionally to the control points&#39; density in each target zone.
 
-1. _PAI\_distance_[_distance weighted point-based areal interpolation_]: The process is similar to the one described above but the weights are calculated using a distance instead of a density function [_distance from target zone to the closest control point_ Vs _number of control points within target zone_].
+1. _PAI\_distance_ [_distance weighted point-based areal interpolation_]: The process is similar to the one described above but the weights are calculated using a distance instead of a density function [_distance from target zone to the closest control point_ Vs _number of control points within target zone_].
 
 
 ## Further information
